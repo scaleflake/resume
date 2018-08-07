@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+h3, h4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body {
+	font-family: "Roboto";
+	background-color: rgb(100, 100, 100);
+	margin: 0px;
+}
+
+header {
+	display: block;
+	text-align: center; 
+	background-color: white; 
+	max-width: 900px; 
+	margin: 0 auto; 
+	font-size: 24px;
+}
+
+content {
+	display: block;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 900px;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+ul {
+	-webkit-padding-start: 20px;
+}
+
+div#main {
+	display: grid; 
+	grid-template-columns: auto 200px; 
+	grid-auto-rows: 275px;
+}
+
+@media screen and (max-width: 525px) {
+	div#main {
+		grid-template-columns: auto 0px; 
+		grid-auto-rows: 275px;
+	}
+}
+
+div#interesting > ul {
+	display: grid; 
+	grid-template-columns: auto auto; 
+	grid-template-rows: auto auto;
+}
+
+div#interesting > ul > li {
+	grid-column: span 1;
+}
+
+@media screen and (max-width: 565px) {
+	div#interesting > ul {
+		display: grid; 
+		grid-template-columns: auto; 
+		grid-template-rows: auto auto auto auto;
+	}
+}
