@@ -17,5 +17,5 @@ app.use('/', express.static(__dirname + '/'));
 	});
 });
 
-app.listen(8080);
+app.listen(18000);
 console.log('Server started');
