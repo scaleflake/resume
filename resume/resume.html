@@ -12,23 +12,102 @@
 		<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script> -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script> -->
 
-		<link rel="icon" type="image/png" href="/assets/favicon.png" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
 
-		<link rel="stylesheet" type="text/css" href="/assets/styles.css">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			h3, h4 {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			body {
+				font-family: "Roboto";
+				/*background-color: rgb(100, 100, 100);*/
+				background-color: white;
+				margin: 0px;
+			}
+
+			header {
+				display: block;
+				text-align: center; 
+				background-color: white; 
+				max-width: 900px; 
+				margin: 0 auto; 
+				font-size: 14px;
+			}
+
+			content {
+				display: block;
+				background-color: white;
+				margin-left: auto;
+				margin-right: auto;
+				/*margin-top: 10px;
+				margin-bottom: 10px;*/
+				max-width: 900px;
+				width: 100%;
+				padding-top: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+				/*box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.75);*/
+			}
+
+			ul {
+				-webkit-padding-start: 20px;
+			}
+
+			div#main {
+				/*display: grid; 
+				grid-template-columns: auto 200px; 
+				grid-auto-rows: 275px;*/
+				position: relative;
+			}
+
+			@media screen and (max-width: 525px) {
+				div#main {
+					grid-template-columns: auto 0px; 
+					grid-auto-rows: 275px;
+				}
+
+			}
+
+			div#interesting > ul {
+				/*display: grid; 
+				grid-template-columns: auto auto; 
+				grid-template-rows: auto auto;*/
+			}
+
+			div#interesting > ul > li {
+				/*grid-column: span 1;*/
+				display: inline-block;
+				width: 50%;
+				vertical-align: top;
+			}
+
+			@media screen and (max-width: 565px) {
+				div#interesting > ul {
+					display: grid; 
+					grid-template-columns: auto; 
+					grid-template-rows: auto auto auto auto;
+				}
+			}
+		</style>
 
 		<!-- <script src="./script.js"></script> -->
 	</head>
 <body>
 	<header>
-		<span>lang:</span> <a href="/resume-en">en</a>/<a href="/resume-ru">ru</a>
-		<span>download:</span> <a href="/">pdf</a>
+		<a href="http://188.213.175.78:18000/resume">http://188.213.175.78:18000/resume</a>
 	</header>
 
 	<content>	
 		<div id="main">
-			<div style="padding-right: 16px;">
+			<div style="padding-right: 216px; padding-bottom: 54.56px">
 				<h1>Nurislam Zaripov</h1>
-				<hr>
 				<ul>
 					<li>3 July 1999 (19 years)</li>
 					<li>Kazan</li>
@@ -42,19 +121,17 @@
 					<li><a href="https://github.com/scaleflake">github.com/scaleflake</a></li>
 					<li><a href="https://github.com/n1xDev">github.com/n1xDev</a></li>
 				</ul>
-			</div>
-			<div>
-				<img src="/assets/photo-cropped.png" alt="" style="width: 100%;">
+			</div><!-- 
+
+			 --><div style="position: absolute; width: 200px; top: 0px; right: 0px;">
+				<img src="http://188.213.175.78:18000/photo-cropped.png" alt="" style="width: 100%;">
 			</div>
 		</div>
 
-		<!-- <h3>Professional summary</h3>
-		<div></div> -->
-		
 		<div id="interesting">
 			<h3>Interesting areas and directions</h3>
 			<ul>
-				<li>
+				<li style="display: inline-block;">
 					<h4>Decentralized systems, cryptography:</h4>
 					<ul>
 						<li><a href="https://en.wikipedia.org/wiki/Peer-to-peer">P2P protocols</a></li>
@@ -63,9 +140,9 @@
 						<li><a href="https://en.wikipedia.org/wiki/Tor_(anonymity_network)">TOR</a></li>
 						<li><a href="https://en.wikipedia.org/wiki/I2P">I2P</a></li>
 					</ul>
-				</li>
+				</li><!-- 
 
-				<li>
+				 --><li>
 					<h4>Big data and machine learning:</h4>
 					<ul>
 						<li><a href="https://en.wikipedia.org/wiki/Data_visualization">Data visualisation</a></li>
@@ -75,9 +152,9 @@
 						<li><a href="https://en.wikipedia.org/wiki/Data_mining">Data mining</a></li>
 					</ul>
 					<br>
-				</li>
+				</li><!-- 
 
-				<li>
+				 --><li>
 					<h4>Algorythms, optimization, optimization algorithms:</h4>
 					<ul>
 						<li><a href="https://en.wikipedia.org/wiki/Self-testing_code">Self-testing code</a></li>
@@ -85,9 +162,9 @@
 						<li><a href="https://en.wikipedia.org/wiki/Software_performance_testing">Performance testing</a></li>
 						<!-- <li>Algorythms comparsion</li> -->
 					</ul>
-				</li>
+				</li><!-- 
 
-				<li>
+				 --><li>
 					<h4>Other:</h4>
 					<ul>
 						<li><a href="https://en.wikipedia.org/wiki/Quantum_programming">Quantum programming</a></li>
