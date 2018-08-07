@@ -6,12 +6,14 @@ var app = express();
 app.use('/', express.static(__dirname + '/'));
 
 ['/resume', '/resume/en', '/resume-en', '/resume_en'].forEach(e => {
+	app.use(e, express.static(__dirname + '/'));
 	app.get(e, (req, res) => {
 		res.sendFile(__dirname + '/index.html');
 	});
 });
 
 ['/resume/ru', '/resume-ru', '/resume_ru'].forEach(e => {
+	app.use(e, express.static(__dirname + '/'));
 	app.get(e, (req, res) => {
 		res.sendFile(__dirname + '/index-ru.html');
 	});
